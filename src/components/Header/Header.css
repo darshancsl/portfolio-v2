@@ -1,0 +1,31 @@
+#header nav {
+  min-height: 75px;
+  background: #fff;
+}
+
+#header a {
+  position: relative;
+  font-size: 17px;
+}
+
+#header .navbar-nav a::after {
+  content: "";
+  height: 3px;
+  background-color: #f16b36;
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  right: 50%;
+  transition: all 0.3s ease-out;
+}
+
+#header .navbar-nav a:hover::after {
+  left: 20%;
+  right: 20%;
+}
+
+@media only screen and (max-width: 992px) {
+  #header a::after {
+    content: none;
+  }
+}
